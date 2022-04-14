@@ -1,4 +1,4 @@
-const { query } = require('./util/hasura');
+import { query } from './util/hasura';
 
 exports.handler = async (event) => {
   const { id, title, tagline, poster } = JSON.parse(event.body);
